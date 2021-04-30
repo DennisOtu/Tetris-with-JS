@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        canvas {
+            box-shadow:  10px 0px 10px;
+            margin: 20px;
+
+        }
+
+        div {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        #score {
+            display: inline-block;
+        }
+
+    </style>
+    
+    <script src="tetrisScript.js" defer></script>
+
+</head>
+<body>
+    <h1 style="color: green;">Tetris</h1>
+
+    <div style="color: green;">
+        Score : <div id='score'>0</div>
+    </div>
+
+    <canvas id="game" width="200" height="400"></canvas>
+
+</body>
+</html>
